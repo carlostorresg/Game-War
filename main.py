@@ -7,7 +7,9 @@ ranks = ("Two", "Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack",
 
 
 class Card: 
-
+    '''
+    Creating a class for a card
+    '''
     def __init__(self,suit,rank):
         self.suit = suit
         self.rank = rank
@@ -19,7 +21,9 @@ class Card:
 
         
 class Deck:
-
+    '''
+    Creating a list with a for loop
+    '''
     def __init__(self):
 
         self.all_cards = []
@@ -32,13 +36,28 @@ class Deck:
 
                 self.all_cards.append(created_card)
 
-
+    
     def shuffle(self):
-        random.shuffle(self.all_cards)
+        '''
+        Shuffling the cards
+        '''
 
+        random.shuffle(self.all_cards)
+        '''
+        No need to return ,because the sorted list stays 
+        (shuffle does not return nothing )
+        '''
+        
 
     def deal_one(self):
-        return self.all_cards.pop()
+        '''
+        Dropping the last card of the deck'''
+        
+        return self.all_cards.pop(-1)
+        '''
+        Important to return it ,so have the value 
+        '''
+
 
 
 
