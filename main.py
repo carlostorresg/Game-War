@@ -33,22 +33,13 @@ class Deck:
                 self.all_cards.append(created_card)
 
 
-new_deck = Deck()
-
-for cards in new_deck.all_cards:
-    print(cards)
+    def shuffle(self):
+        random.shuffle(self.all_cards)
 
 
-
-
+    def deal_one(self):
+        return self.all_cards.pop()
 
 
 
 
-                
-
-
-
-
-
-        
