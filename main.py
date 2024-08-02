@@ -59,6 +59,44 @@ class Deck:
         Important to return it ,so have the value 
         '''
 
+class Player:
+
+
+    def __init__(self,name):
+            
+        self.all_cards = []
+        self.name = name 
+
+
+    def remove_one(self):
+            
+        return self.all_cards.pop(0)
+            
+
+        
+    def add_cards(self,new_cards):
+
+        if type(new_cards) == type([]):
+            self.all_cards.extend(new_cards)
+
+        else: self.all_cards.append(new_cards)
+
+
+    def __str__(self):
+        return f"Player  {self.name} has {len(self.all_cards)}"
+        
+
+first_player = Player("Carlos")
+
+first_player.add_cards(["1","2"])
+first_player.remove_one()
+print(first_player)
+
+
+
+
+
+
 
 
 
