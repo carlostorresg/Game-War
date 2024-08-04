@@ -101,7 +101,7 @@ for x in range(26):
     player_one.add_cards(new_deck.deal_one())
     player_two.add_cards(new_deck.deal_one())
 
-    #Game star 
+    #Game starts
 round = 0
 game_on = True
 
@@ -135,7 +135,7 @@ while game_on:
 
     
     at_war = True 
-    #-----------------------------------------------------------------------------------
+   
     while at_war:
 
         if player_one_cards[-1].value > player_two_cards[-1].value:
@@ -161,6 +161,9 @@ while game_on:
             print("at war")
 
             if len(player_one.all_cards) < 5 :
+                '''
+                The player is not going to continue if doesn't have enough cards
+                '''
                 print("Player two has won the game")
             
                 game_on = False
@@ -177,6 +180,9 @@ while game_on:
             else:
                 
                 for card in range(5):
+                    '''
+                    Adding 5 cards to the list 
+                    '''
                     player_one_cards.append(player_one.remove_one())
                     player_two_cards.append(player_two.remove_one())
 
