@@ -6,6 +6,11 @@
 This project is my first implementation of the classic card game "War" using object-oriented programming (OOP) in Python. Two computer-controlled players compete to win all the cards.
 
 
+
+<img width="584" alt="Screenshot 2024-08-11 at 8 03 15 PM" src="https://github.com/user-attachments/assets/e0282e15-a979-4348-b098-372cddbf62a2">
+
+
+
 ## Features
 
 OOP Design: Models the game with classes like Card, Deck, and Player.
